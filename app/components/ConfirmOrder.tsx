@@ -23,7 +23,7 @@ export default function ConfirmOrder({handleStartNew, cartItems}:any) {
         <div className='mt-2 p-3 bg-[#f4edeb] rounded'>
 
         {cartItems.map((product: any) => (
-            <ConfirmItem product={product} />
+            <ConfirmItem key={product.id} product={product} />
         ))}  
 
         <p className='mb-3 mt-2 flex justify-between'>
